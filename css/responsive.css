@@ -1,0 +1,113 @@
+/* ==========================================================================
+   ISHU HENNA HEAVEN — RESPONSIVE STYLESHEET
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   LARGE DESKTOP / DEFAULT already handled in style.css
+   -------------------------------------------------------------------------- */
+
+/* Tablets & small desktops (<=1199px) */
+@media (max-width: 1199.98px) {
+  .section-pad { padding: 90px 0; }
+  .hero-title { font-size: clamp(2.4rem, 5.6vw, 4rem); }
+}
+
+/* Tablets (<=991px) */
+@media (max-width: 991.98px) {
+  .section-pad { padding: 70px 0; }
+  .section-pad-sm { padding: 54px 0; }
+
+  .navbar-luxury {
+    background: rgba(10,10,10,0.97);
+    backdrop-filter: blur(14px);
+    padding: 14px 0;
+    border-bottom: 1px solid var(--border-gold);
+  }
+  .navbar-luxury .navbar-brand {
+    font-size: 1.25rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 70px);
+  }
+  .navbar-luxury .navbar-collapse {
+    margin-top: 16px;
+    padding: 10px 0 4px;
+    border-top: 1px solid rgba(212,175,55,0.15);
+  }
+  .navbar-luxury .nav-link { margin: 6px 0; }
+  .navbar-luxury .nav-link.btn-nav-book { display: inline-block; margin: 10px 0 0 !important; }
+
+  .page-banner { padding: 150px 0 70px; }
+
+  .timeline { padding-left: 30px; }
+  .timeline-item::before { left: -36px; }
+
+  .contact-card { padding: 30px; }
+
+  .footer-luxury { padding: 54px 0 0; }
+}
+
+/* Small tablets / large phones (<=767px) */
+@media (max-width: 767.98px) {
+  .section-pad { padding: 56px 0; }
+  .section-pad-sm { padding: 44px 0; }
+
+  .hero { min-height: 100svh; align-items: flex-start; padding-top: 120px; padding-bottom: 60px; }
+  .hero-frame { inset: 14px; }
+  .hero-title { font-size: clamp(2.1rem, 8vw, 3rem); letter-spacing: 0.03em; }
+  .hero-script { font-size: clamp(1.5rem, 6vw, 2rem); }
+  .hero-tagline { font-size: 0.95rem; padding: 0 6px; }
+  .hero-btns { flex-direction: column; align-items: center; width: 100%; }
+  .hero-btns .btn-gold, .hero-btns .btn-outline-gold { width: 100%; max-width: 280px; text-align: center; }
+
+  .section-title { font-size: 1.7rem; }
+  .script-text { font-size: 1.7rem; margin-bottom: 8px; }
+  .hero-image-box { min-height: 300px; border-radius: var(--radius-md); }
+
+  .stat-item { padding: 14px 6px; }
+  .stat-number { font-size: 1.9rem; }
+  .stat-label { font-size: 0.7rem; }
+
+  .luxury-card { padding: 30px 22px; }
+
+  .cta-banner { padding: 60px 0; }
+
+  .page-banner { padding: 130px 0 56px; }
+
+  .filter-bar { gap: 8px; }
+  .filter-btn { padding: 8px 16px; font-size: 0.76rem; }
+
+  .lightbox-prev { left: 10px; width: 40px; height: 40px; }
+  .lightbox-next { right: 10px; width: 40px; height: 40px; }
+  .lightbox-close { top: 14px; right: 14px; width: 40px; height: 40px; }
+  .lightbox-inner .img-placeholder { min-height: 260px; }
+
+  .contact-card { padding: 24px 20px; }
+
+  .btn-whatsapp { width: 50px; height: 50px; font-size: 1.4rem; bottom: 20px; right: 20px; left: auto; }
+  #back-to-top { width: 42px; height: 42px; bottom: 85px; right: 20px; left: auto; background: var(--bg-dark); }
+
+  .footer-luxury { text-align: center; }
+  .social-icons { justify-content: center; }
+  .footer-links { text-align: center; }
+}
+
+/* Phones (<=575px) */
+@media (max-width: 575.98px) {
+  .container-xl-custom { padding: 0 24px; }
+  .hero-title { font-size: 2rem; }
+  .divider-gold { margin: 18px auto; }
+  .luxury-card .card-icon { width: 50px; height: 50px; font-size: 1.25rem; }
+  .service-card .img-placeholder { height: 200px; }
+  .gallery-item .img-placeholder { min-height: 200px; }
+  .testimonial-text { font-size: 1rem; }
+  .info-card { flex-direction: column; text-align: center; align-items: center; }
+  .hours-list li { font-size: 0.85rem; }
+}
+
+/* Very small phones (<=380px) */
+@media (max-width: 380px) {
+  .hero-title { font-size: 1.7rem; }
+  .navbar-luxury .navbar-brand { font-size: 1.1rem; }
+}
